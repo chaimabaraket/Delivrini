@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/header_bg"
+                    android:transitionName="bg" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:transitionName="Logo"
+                    app:srcCompat="@drawable/icon1" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/black"
+                android:text="Welcome to Delevrini"
+                android:textSize="30sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:indeterminateTint="@color/lightcolor"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Login to enter"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="302dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/input_long"
+                android:hint="email "
+                android:inputType="textEmailAddress"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+       />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="302dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/input_long"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+         />
+
+            <TextView
+                android:id="@+id/forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="55dp"
+                android:focusable="false"
+                android:lineSpacingExtra="5dp"
+                android:text="Forget password"
+                android:textIsSelectable="false" />
+
+            <android.widget.Button
+                android:id="@+id/login"
+                style="@style/MyDarkButton"
+                android:layout_width="302dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Login"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="New to delivrini?"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:text="Signup"
+                    android:textColor="@color/lightcolor"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

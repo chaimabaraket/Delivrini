@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Theme.Rento_test_graphic.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/accentcolor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+
+    </style>
+
+    <style name="MyLoader" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/lightcolor</item>
+    </style>
+
+    <style name="MyDarkButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="MyLightButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:animateOnClick">true</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyRedButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:animateOnClick">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/shape</item>
+
+        <item name="android:buttonBarButtonStyle">@style/MyDarkButton</item>
+        <item name="colorPrimary">@color/accentcolor</item>
+        <item name="colorSecondary">@color/lightcolor</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:itemPadding">3dp</item>
+    </style>
+
+
+</resources>

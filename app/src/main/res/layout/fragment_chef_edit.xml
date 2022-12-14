@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chef.ChefEdit">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/clickLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/icon1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textShortMessage"
+            android:text="Title"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/property_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post title"
+            android:maxLength="30"
+            android:paddingBottom="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/property_edit_location"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="4"
+                android:dropDownWidth="wrap_content"
+                android:entries="@array/Search_for_location"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/property_edit_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="500 DT"
+            android:inputType="number"
+            android:paddingBottom="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/property_edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:hint="about property"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:paddingBottom="15dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/property_edit_picture"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="@string/add_picture"-->
+        <!--            android:textStyle="italic" />-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_add_picture"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" />
+
+        <android.widget.Button
+            android:id="@+id/edit_property_button"
+            android:layout_gravity="end"
+            style="@style/MyDarkButton"
+            android:text="Edit" />
+
+
+    </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
